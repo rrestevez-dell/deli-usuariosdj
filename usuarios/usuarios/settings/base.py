@@ -37,7 +37,8 @@ DJANGO_APPS = (
 )
 
 LOCAL_APPS = (
-
+    'applications.users',
+    'applications.home',
 )
 
 THIRD_PARTY_APPS = (
@@ -99,13 +100,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+#
+AUTH_USER_MODEL = 'users.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-ES'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Madrid'
 
 USE_I18N = True
 
